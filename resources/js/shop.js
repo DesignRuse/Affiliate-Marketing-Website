@@ -2,7 +2,7 @@
 //     var jumpID = location.hash.replace('#', '');
 //     document.getElementById(jumpID).scrollIntoView();
 // });
-
+window.addEventListener('DOMContentLoaded', function () {
 	var allProductsSection = document.getElementById('all-products-section');
 	var products = allProductsSection.getElementsByClassName('product');
 	var productImages = document.getElementsByClassName('product-image');
@@ -193,3 +193,4 @@
 		l = l.replace(/\?.*$/g, '');
 		location.href = l + '?selectedTab=' + selectedTab.split(' ').join('');
 	}
+});
