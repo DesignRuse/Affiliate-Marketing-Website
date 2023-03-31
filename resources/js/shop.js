@@ -81,19 +81,19 @@ window.addEventListener('DOMContentLoaded', function () {
 	function populateShop(selectedTab) {
 		var jsonFileURL = '';
 		if (selectedTab == 'Music Systems') {
-			jsonFileURL = '../resources/database/musicSystems.txt';
+			jsonFileURL = '../resources/database/musicSystems.json';
 		} else if (selectedTab == 'Sound Boxes') {
-			jsonFileURL = '../resources/database/soundBoxes.txt';
+			jsonFileURL = '../resources/database/soundBoxes.json';
 		} else if (selectedTab == 'Headphones') {
-			jsonFileURL = '../resources/database/headphones.txt';
+			jsonFileURL = '../resources/database/headphones.json';
 		}
 		const allProductsSection = document.getElementById('all-products-section');
 		const colmHundred = allProductsSection.getElementsByClassName('colm-100')[0];
 
 		fetch(jsonFileURL)
-			.then(response => response.text())
+			.then(response => response.json())
 			.then(data => {
-				const products = JSON.parse(data).products;
+				const products = data.products;
 				for (let i = 0; i < products.length; i++) {
 					const product = products[i];
 					const productDiv = document.createElement('div');
