@@ -1,20 +1,8 @@
-function scrollToHashElement() {
-	const jumpID = location.hash.replace('#', '');
-	if (jumpID) {
-		requestAnimationFrame(() => {
-			document.querySelector(`#${jumpID}`)?.scrollIntoView({
-				behavior: 'smooth'
-			});
-		});
-	}
-}
-
 window.addEventListener('DOMContentLoaded', function () {
-	scrollToHashElement();
-	const allProductsSection = document.getElementById('all-products-section');
-	const musicSystems = document.getElementById('music-systems');
-	const soundBoxes = document.getElementById('sound-boxes');
-	const headPhones = document.getElementById('headphones');
+	const allProductsSection = document.querySelector('#all-products-section');
+	const musicSystems = document.querySelector('#music-systems');
+	const soundBoxes = document.querySelector('#sound-boxes');
+	const headPhones = document.querySelector('#headphones');
 	let selectedTab = '';
 	const jsonFiles = {
 		'Music Systems': music_systems,
@@ -22,28 +10,32 @@ window.addEventListener('DOMContentLoaded', function () {
 		'Headphones': head_phones
 	};
 
-	if (location.search == '?selectedTab=MusicSystems') {
-		selectedTab = 'Music Systems';
-		musicSystems.classList.add('active-tab');
-		soundBoxes.classList.remove('active-tab');
-		headPhones.classList.remove('active-tab');
-
-	} else if (location.search == '?selectedTab=SoundBoxes') {
-		selectedTab = 'Sound Boxes';
-		musicSystems.classList.remove('active-tab');
-		soundBoxes.classList.add('active-tab');
-		headPhones.classList.remove('active-tab');
-	} else if (location.search == '?selectedTab=Headphones') {
-		selectedTab = 'Headphones';
-		musicSystems.classList.remove('active-tab');
-		soundBoxes.classList.remove('active-tab');
-		headPhones.classList.add('active-tab');
-	} else {
-		selectedTab = 'Music Systems';
-		musicSystems.classList.add('active-tab');
-		soundBoxes.classList.remove('active-tab');
-		headPhones.classList.remove('active-tab');
-		alterURL(selectedTab);
+	switch (location.search) {
+		case '?selectedTab=MusicSystems':
+			selectedTab = 'Music Systems';
+			musicSystems.classList.add('active-tab');
+			soundBoxes.classList.remove('active-tab');
+			headPhones.classList.remove('active-tab');
+			break;
+		case '?selectedTab=SoundBoxes':
+			selectedTab = 'Sound Boxes';
+			musicSystems.classList.remove('active-tab');
+			soundBoxes.classList.add('active-tab');
+			headPhones.classList.remove('active-tab');
+			break;
+		case '?selectedTab=Headphones':
+			selectedTab = 'Headphones';
+			musicSystems.classList.remove('active-tab');
+			soundBoxes.classList.remove('active-tab');
+			headPhones.classList.add('active-tab');
+			break;
+		default:
+			selectedTab = 'Music Systems';
+			musicSystems.classList.add('active-tab');
+			soundBoxes.classList.remove('active-tab');
+			headPhones.classList.remove('active-tab');
+			alterURL(selectedTab);
+			break;
 	}
 	populateShop(selectedTab);
 
@@ -151,4 +143,17 @@ window.addEventListener('DOMContentLoaded', function () {
 		l = l.replace(/\?.*$/g, '');
 		location.href = l + '?selectedTab=' + selectedTab.split(' ').join('');
 	}
+
+	function scrollToHashElement() {
+		const jumpID = location.hash.replace('#', '');
+		if (jumpID) {
+			requestAnimationFrame(() => {
+				document.querySelector(`#${jumpID}`)?.scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		}
+	}
+
+	scrollToHashElement();
 });
