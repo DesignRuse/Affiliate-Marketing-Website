@@ -1,0 +1,68 @@
+﻿:root {
+	--horizontal-gutter: 4rem;	/*-----------  HORIZONTAL GUTTER  -----------*/
+}
+
+.row {
+	max-width: 114rem;	/*-----------  MAXIMUM WIDTH OF GRID SYSTEM  -----------*/
+	height: auto;
+	font-size: 1.6rem;
+	margin: 0 auto;
+	margin-bottom: 8rem;	/*-----------  VERTICAL GUTTER  -----------*/
+}
+
+.row:last-child {
+	margin-bottom: 0;	/*-----------  REMOVES VERTICAL GUTTER FOR THE LAST ROW FROM TOP  -----------*/
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------  COMMON STYLES APPLICABLE TO ALL TYPES OF COLUMNS IN A ROW  -----------*/
+/*-----------------------------------------------------------------------------------*/
+.row [class^="colm-"] {
+	height: auto;
+	margin-right: var(--horizontal-gutter);
+	float: left;
+}
+
+.row [class^="colm-"]:last-of-type {
+	margin-right: 0;	/*-----------  REMOVES HORIZONTAL GUTTER FOR THE LAST COLUMN FROM LEFT  -----------*/
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------  COMMON STYLES APPLICABLE TO ALL TYPES OF COLUMNS IN A ROW  -----------*/
+/*-----------------------------------------------------------------------------------*/
+.row .colm-20 {
+	width: calc((100% - 4 * var(--horizontal-gutter)) / 5);
+}
+
+.row .colm-25 {
+	width: calc((100% - 3 * var(--horizontal-gutter)) / 4);
+}
+
+.row .colm-33 {
+	width: calc((100% - 2 * var(--horizontal-gutter)) / 3);
+}
+
+.row .colm-50 {
+	width: calc((100% - var(--horizontal-gutter)) / 2);
+}
+
+.row .colm-66 {
+	width: calc(((100% - 2 * var(--horizontal-gutter)) / 3) * 2 + var(--horizontal-gutter));
+}
+
+.row .colm-75 {
+	width: calc(((100% - 3 * var(--horizontal-gutter)) / 4) * 3 + 2 * var(--horizontal-gutter));
+}
+
+.row .colm-100 {
+	width: 100%;
+}
+
