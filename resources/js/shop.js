@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		alterURL(selectedTab);
 	}
 	populateShop(selectedTab);
-    
+
 	musicSystems.addEventListener('click', function () {
 		musicSystems.classList.add('active-tab');
 		soundBoxes.classList.remove('active-tab');
@@ -76,23 +76,22 @@ window.addEventListener('DOMContentLoaded', function () {
 	});
 
 	function populateShop(selectedTab) {
-		var jsonFileURL = null;
+		var jsonFile = null;
 		if (selectedTab == 'Music Systems') {
-			jsonFileURL = music_systems;
+			jsonFile = music_systems;
 		} else if (selectedTab == 'Sound Boxes') {
-			jsonFileURL = sound_boxes;
+			jsonFile = sound_boxes;
 		} else if (selectedTab == 'Headphones') {
-			jsonFileURL = head_phones;
+			jsonFile = head_phones;
 		}
 
-		displayData(jsonFileURL);
+		displayJSONdataInHTML(jsonFile);
 	}
 
-	
-	function displayData(jsonFileURL) {
+	function displayJSONdataInHTML(jsonFile) {
 		const allProductsSection = document.getElementById('all-products-section');
 		const colmHundred = allProductsSection.getElementsByClassName('colm-100')[0];
-		const products = jsonFileURL.products;
+		const products = jsonFile.products;
 		for (let i = 0; i < products.length; i++) {
 			const product = products[i];
 			const productDiv = document.createElement('div');
@@ -128,9 +127,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			const h4 = document.createElement("h4");
 			h4.textContent = "About This Item";
 			const span = document.createElement("span");
-			span.style.color = "transparent";
-			span.style.textShadow = "0 0 0 #ff5361";
-			span.innerHTML = " 👉";
+			span.innerHTML = " 👇";
 			h4.appendChild(span);
 			productInfo.appendChild(h4);
 

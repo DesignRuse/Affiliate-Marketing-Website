@@ -194,6 +194,18 @@
 	.product .product-info {
 		flex: 100%;
 	}
+	.product-info .product-highlights {
+		text-align: justify;
+	}
+	.product-info .product-description {
+		text-align: justify;
+	}
+	.product-info .product-feature {
+		text-align: justify;
+	}
+	.product-info .additional-info {
+		text-align: justify;
+	}
 	#about-us {
 		background-image: linear-gradient(to right bottom, var(--fiery-rose), var(--linen));
 	}
