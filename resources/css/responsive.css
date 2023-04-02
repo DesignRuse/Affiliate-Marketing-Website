@@ -189,6 +189,9 @@
 		cursor: pointer;
 	}
 	.product .product-image {
+		flex-direction: column;
+	}
+	.product .product-image {
 		flex: 100%;
 	}
 	.product .product-info {

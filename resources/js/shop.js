@@ -4,11 +4,6 @@ window.addEventListener('DOMContentLoaded', function () {
 	const soundBoxes = document.querySelector('#sound-boxes');
 	const headPhones = document.querySelector('#headphones');
 	let selectedTab = '';
-	const jsonFiles = {
-		'Music Systems': music_systems,
-		'Sound Boxes': sound_boxes,
-		'Headphones': head_phones
-	};
 
 	switch (location.search) {
 		case '?selectedTab=MusicSystems':
@@ -88,12 +83,16 @@ window.addEventListener('DOMContentLoaded', function () {
 	});
 
 	function populateShop(selectedTab) {
+		const jsonFiles = {
+			'Music Systems': music_systems,
+			'Sound Boxes': sound_boxes,
+			'Headphones': head_phones
+		};
 		const jsonFile = jsonFiles[selectedTab];
 		displayJSONdataInHTML(jsonFile);
 	}
 
 	function displayJSONdataInHTML(jsonFile) {
-		const allProductsSection = document.getElementById('all-products-section');
 		const colmHundred = allProductsSection.querySelector('.colm-100');
 		const products = jsonFile.products;
 		const fragment = document.createDocumentFragment();
@@ -155,5 +154,8 @@ window.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 
-	scrollToHashElement();
+	if(location.hash) {
+		scrollToHashElement();
+	}
+
 });
