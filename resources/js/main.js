@@ -15,13 +15,11 @@
 			menuIcon.firstElementChild.className = 'fa fa-bars';
 		}
 	});
-
-	// var mainImg = document.getElementsByClassName('main-img')[0].firstElementChild;
-	// var thumbnailImgContainer = document.getElementsByClassName('thumbnail');
-	// for (let i = 0; i < thumbnailImgContainer.length; i++) {
-	// 	thumbnailImgContainer[i].addEventListener('click', function (ev) {
-	// 		mainImg.src = thumbnailImgContainer[i].firstElementChild.src;
-	// 	});
-	// }
 });
+
+
+
+
+
+
 
