@@ -930,7 +930,6 @@ img {
 	outline: none;
 	color: #ddd;
 	font-size: 1.4rem;
-	text-transform: uppercase;
 	transition: border-color .2s;
 }
 
