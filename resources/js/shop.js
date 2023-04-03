@@ -95,46 +95,100 @@ window.addEventListener('DOMContentLoaded', function () {
 	function displayJSONdataInHTML(jsonFile) {
 		const colmHundred = allProductsSection.querySelector('.colm-100');
 		const products = jsonFile.products;
-		const fragment = document.createDocumentFragment();
-		const starIconClassesRegex = /\s+/;
-
-		const productTemplate = (product) => {
-			const productFeatures = product.productFeatures
-				.map(feature => `<p class="product-feature"><span>✔</span> ${feature}</p>`)
-				.join('');
-
-			const starIcons = product.productRating
-				.map(iconClass => `<i class="${iconClass.trim()}"></i>`)
-				.join('');
-
-			return `
-			<div class="product" id="${product.productId}">
-			<div class="product-image">
-				<img src="${product.productImage}" alt="${product.productName}">
-			</div>
-			<div class="product-info">
-				<p class="product-category">${product.productCategory}</p>
-				<h2 class="product-name">${product.productName}</h2>
-				<p class="product-highlights">${product.productHighlights}</p>
-				<h4>About This Item <span>👇</span></h4>
-				<p class="product-description">${product.productDescription}</p>
-				${productFeatures}
-				<p class="additional-info">${product.additionalInfo}</p>
-				<div class="rating margin-bottom-small">${starIcons}</div>
-				<a href="${product.buyLink}" target="_blank" class="btn btn-rose btn-custom">Get It on Amazon</a>
-			</div>
-		</div>		
-		  `;
-		};
-
 		for (let i = 0; i < products.length; i++) {
 			const product = products[i];
-			const productHtml = productTemplate(product);
-			const productDiv = document.createRange().createContextualFragment(productHtml);
-			fragment.appendChild(productDiv);
-		}
+			const productDiv = document.createElement('div');
+			productDiv.classList.add('product');
+			productDiv.id = product.productId;
 
-		colmHundred.appendChild(fragment);
+			const productImg = document.createElement('div');
+			productImg.classList.add('product-image');
+			const image = document.createElement('img');
+			image.src = product.productImage;
+			image.alt = product.productName;
+			productImg.appendChild(image);
+			productDiv.appendChild(productImg);
+
+			const productInfo = document.createElement('div');
+			productInfo.classList.add('product-info');
+
+			const productCategory = document.createElement('p');
+			productCategory.classList.add('product-category');
+			productCategory.textContent = product.productCategory;
+			productInfo.appendChild(productCategory);
+
+			const productName = document.createElement('h2');
+			productName.classList.add('product-name');
+			productName.textContent = product.productName;
+			productInfo.appendChild(productName);
+
+			const productHighlights = document.createElement('p');
+			productHighlights.classList.add('product-highlights');
+			productHighlights.textContent = product.productHighlights;
+			productInfo.appendChild(productHighlights);
+
+			const h4 = document.createElement("h4");
+			h4.textContent = "About This Item";
+			const span = document.createElement("span");
+			span.innerHTML = " 👇";
+			h4.appendChild(span);
+			productInfo.appendChild(h4);
+
+			const productDescriptions = product.productDescriptions;
+			for (let x = 0; x < productDescriptions.length; x++) {
+				const productDescription = document.createElement('p');
+				productDescription.classList.add('product-description');
+				productDescription.textContent = productDescriptions[x];
+				productInfo.appendChild(productDescription);
+			}
+
+			const productFeatures = product.productFeatures;
+			for (let j = 0; j < productFeatures.length; j++) {
+				const productFeature = document.createElement('p');
+				productFeature.classList.add('product-feature');
+				const span = document.createElement('span');
+				span.innerHTML = '✔ ';
+				const text = document.createTextNode(productFeatures[j]);
+				productFeature.appendChild(span);
+				productFeature.appendChild(text);
+				productInfo.appendChild(productFeature);
+			}
+
+			const additionalInfos = product.additionalInfos;
+			for (let y = 0; y < additionalInfos.length; y++) {
+				const additionalInfo = document.createElement('p');
+				additionalInfo.classList.add('additional-info');
+				additionalInfo.textContent = additionalInfos[y];
+				productInfo.appendChild(additionalInfo);
+			}
+
+			// Create a div element with class "rating"
+			const ratingDiv = document.createElement('div');
+			ratingDiv.classList.add('rating', 'margin-bottom-small');
+			// Create an array of star icons classes
+			const starIcons = product.productRating;
+			// Loop through the star icons classes and create an i element for each one
+			for (let k = 0; k < starIcons.length; k++) {
+				const starIcon = document.createElement('i');
+				var starIconClasses = starIcons[k].split(/\s+/);
+				for (l = 0; l < starIconClasses.length; l++) {
+					starIcon.classList.add(starIconClasses[l]);
+				}
+				ratingDiv.appendChild(starIcon);
+			}
+			// Append the rating div to the body (or any other desired element)
+			productInfo.appendChild(ratingDiv);
+
+			const buyLink = document.createElement('a');
+			buyLink.href = product.buyLink;
+			buyLink.target = '_blank';
+			buyLink.textContent = 'Get It on Amazon';
+			buyLink.classList.add('btn', 'btn-rose', 'btn-custom');
+			productInfo.appendChild(buyLink);
+
+			productDiv.appendChild(productInfo);
+			colmHundred.appendChild(productDiv);
+		}
 	}
 
 	function alterURL(selectedTab) {
