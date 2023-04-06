@@ -7,8 +7,7 @@ var head_phones = {
 		"productName": "Sony ZX Series Wired On-Ear Headphones",
 		"productHighlights": "Lightweight and comfortable / Swivel design / 30mm drivers / Wide frequency range / Cushioned ear cups / Tangle-free cord / Compatible with most devices",
 		"productDescriptions": [
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat tempus augue, quis feugiat lorem dapibus eu. Vivamus vitae accumsan diam. Quisque dapibus finibus nisi, quis imperdiet nulla hendrerit a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar orci nulla. Integer eu nulla nec massa dictum interdum et mollis ipsum. Cras quis tristique dui. Nunc auctor sodales magna, quis vestibulum lorem condimentum ac. Pellentesque sed feugiat lacus. Cras fermentum nisi vitae libero rhoncus, sit amet tincidunt sapien posuere. In condimentum tempus eros. Morbi accumsan odio nec elit ornare, ac aliquet magna vestibulum. Suspendisse maximus vitae sem sed fringilla.",
-			"Phasellus facilisis leo eu justo consectetur, et vehicula purus fringilla. Etiam dapibus vulputate fringilla. Pellentesque sed metus non elit consectetur molestie. Suspendisse neque enim, pellentesque fringilla congue et, lacinia sit amet nunc. Proin eget posuere lectus, egestas fermentum nulla. Curabitur varius felis quis enim posuere, ut vestibulum leo consectetur. Aenean magna ligula, consequat vel nulla vel, accumsan dapibus nunc. Fusce ut congue eros. Aenean imperdiet tortor nec ex porttitor, quis volutpat mauris fermentum. Cras quis est nunc. In ultrices congue nunc et viverra."
+			"Experience high-quality sound and all-day comfort with the Sony ZX Series Wired On-Ear Headphones. These headphones feature a lightweight and comfortable design that's perfect for extended use. The on-ear design allows for excellent noise isolation, so you can fully immerse yourself in your music.",
 		],
 		"productFeatures": [
 			"Lightweight and comfortable design for extended use.",
