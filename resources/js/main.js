@@ -16,6 +16,9 @@
 		}
 	});
 
+	const smallElement = document.querySelector('.copy-right small');
+	smallElement.textContent = `© ${new Date().getFullYear()} All Rights Reserved`;
+
 	submitFormWithoutRedirecting();
 
 });
