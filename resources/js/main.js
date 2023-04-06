@@ -30,25 +30,29 @@ function submitFormWithoutRedirecting() {
 		const formData = new FormData(contactForm);
 		const url = contactForm.getAttribute('action');
 
-		try {
-			const response = await fetch(url, {
+		fetch(url, {
 				method: 'POST',
-				body: formData
+				headers: {
+					Accept: 'application/json',
+				},
+				body: formData,
+			})
+			.then((response) => response.json())
+			.then((data) => {
+				if (data.success) {
+					success();
+					contactForm.reset();
+				} else {
+					error();
+					contactForm.reset();
+				}
+			})
+			.catch((error) => {
+				console.error(error);
+				error();
+				contactForm.reset();
 			});
 
-			if (response.ok) {
-				//alert('Form submitted successfully!');
-				success();
-				contactForm.reset();
-			} else {
-				throw new Error('Form submission failed');
-				contactForm.reset();
-			}
-		} catch (error) {
-			console.error(error);
-			//alert('An error occurred while submitting the form. Please try again later.');
-			error();
-		}
 	});
 
 }

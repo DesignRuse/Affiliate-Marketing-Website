@@ -1010,6 +1010,7 @@ img {
 
 .success {
 	background-color: #0cff84; 
+	background-image: linear-gradient(to right bottom,#0cff84,#74c54f);
 }
 
 .error {
