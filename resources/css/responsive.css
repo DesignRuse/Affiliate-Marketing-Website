@@ -121,11 +121,13 @@
 		padding-top: 2.5rem;
 	}
 	.flagship img {
-		display: block;
-		position: static;
-		right: 0;
-		bottom: 0;
-		margin: 0 auto;
+		width: 100%;
+		height: auto;
+		/* right: 12%;
+		bottom: 0; */
+		right: 50%;
+		bottom: 10rem;
+		transform: translate(-50%, -50%);
 	}
 	.category:hover {
 		transform: translateY(-.5rem) scale(1.025) !important;
