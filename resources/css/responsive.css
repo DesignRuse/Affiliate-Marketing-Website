@@ -123,10 +123,10 @@
 	.flagship img {
 		width: 100%;
 		height: auto;
-		/* right: 12%;
-		bottom: 0; */
 		right: 50%;
-		bottom: 10rem;
+		/* bottom: 0;
+		right: 50%; */
+		bottom: 50%;
 		transform: translate(-50%, -50%);
 	}
 	.category:hover {
