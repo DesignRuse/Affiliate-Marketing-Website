@@ -358,6 +358,8 @@ img {
 
 .logo-and-nav .logo img {
 	display: block;
+	height: 100%;
+	width: auto;
 }
 
 .logo-and-nav .navigation {
