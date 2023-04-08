@@ -124,6 +124,15 @@ img {
 	}
 }
 
+@keyframes slide-up {
+	from {
+	  transform: translateY(20px);
+	}
+	to {
+	  transform: translateY(0);
+	}
+}
+
 /*--------------------------------------------------------*/
 /*-------------------- ANIMATIONS ------------------------*/
 /*--------------------------------------------------------*/
@@ -739,6 +748,10 @@ img {
 	margin-left: .25rem;
 }
 
+.active-tab {
+	transition: background-color 0.5s ease;
+}
+
 .active-tab>.tab-label {
 	color: var(--fiery-rose);
 }
@@ -761,7 +774,12 @@ img {
 	max-width: 100%;
 	max-height: 70rem;
 	margin: 0 auto;
+	transition: transform 0.3s ease-in-out;
 	/* border-radius: 1.2rem; */
+}
+  
+.product-image:hover img {
+	transform: scale(1.015);
 }
 
 .product .product-info {
@@ -815,6 +833,16 @@ img {
 
 .product-info .rating i:not(:last-of-type) {
 	margin-right: .4rem;
+}
+
+.product {
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+  
+.product.show {
+	opacity: 1;
+	animation: slide-up 0.5s ease-in-out;
 }
 
 #contact-us {

@@ -98,7 +98,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		for (let i = 0; i < products.length; i++) {
 			const product = products[i];
 			const productDiv = document.createElement('div');
-			productDiv.classList.add('product');
+			productDiv.classList.add('product', 'show');
 			productDiv.id = product.productId;
 
 			const productImg = document.createElement('div');
