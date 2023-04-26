@@ -7,8 +7,10 @@ music_systems = {
 		"productName": "32GB Mp3 Player with Bluetooth and WiFi - Unalace Android Streaming Music Player",
 		"productHighlights": "Video Playback / App store / Voice Recorder / Equalizer / Hi-Res Audio",
 		"productDescriptions": [
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat tempus augue, quis feugiat lorem dapibus eu. Vivamus vitae accumsan diam. Quisque dapibus finibus nisi, quis imperdiet nulla hendrerit a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar orci nulla. Integer eu nulla nec massa dictum interdum et mollis ipsum. Cras quis tristique dui. Nunc auctor sodales magna, quis vestibulum lorem condimentum ac. Pellentesque sed feugiat lacus. Cras fermentum nisi vitae libero rhoncus, sit amet tincidunt sapien posuere. In condimentum tempus eros. Morbi accumsan odio nec elit ornare, ac aliquet magna vestibulum. Suspendisse maximus vitae sem sed fringilla.",
-			"Phasellus facilisis leo eu justo consectetur, et vehicula purus fringilla. Etiam dapibus vulputate fringilla. Pellentesque sed metus non elit consectetur molestie. Suspendisse neque enim, pellentesque fringilla congue et, lacinia sit amet nunc. Proin eget posuere lectus, egestas fermentum nulla. Curabitur varius felis quis enim posuere, ut vestibulum leo consectetur. Aenean magna ligula, consequat vel nulla vel, accumsan dapibus nunc. Fusce ut congue eros. Aenean imperdiet tortor nec ex porttitor, quis volutpat mauris fermentum. Cras quis est nunc. In ultrices congue nunc et viverra."
+			"Introducing the Unalace Android Streaming Music Player - the perfect companion for all your music needs! This sleek and stylish mp3 player boasts a massive 32GB of storage space, ensuring that you have all your favorite tunes at your fingertips.",
+			"Not only does this mp3 player come with Bluetooth connectivity, allowing you to easily connect to your favorite wireless headphones, but it also has WiFi connectivity. This means that you can easily access your favorite streaming services like Spotify, Apple Music, and Pandora, giving you access to millions of songs, podcasts, and audiobooks.",
+			"The Unalace Android Streaming Music Player also has a beautiful and easy-to-use interface, making it a breeze to navigate through your music library. You can even create playlists on the go, ensuring that you always have the perfect soundtrack for any occasion.",
+			"But that's not all - this mp3 player also comes with a built-in FM radio, so you can tune into your favorite stations no matter where you are. And if you're someone who likes to stay active, the Unalace Android Streaming Music Player is perfect for you. With its lightweight design and convenient clip, you can take it with you on your morning jog or your afternoon hike."
 		],
 		"productFeatures": [
 			"Two built-in app stores and a music player with a 4-inch full-touch screen.",
@@ -19,7 +21,7 @@ music_systems = {
 			"Long battery life for extended use.",
 			"Sleek and modern design."
 		],
-		"additionalInfos": ["Upgrade your music experience with the Unalace Android Streaming Music Player. With its advanced features and sleek design, this device is perfect for music lovers who want to take their music with them wherever they go.", ],
+		"additionalInfos": ["So whether you're a music lover, a podcast enthusiast, or just someone who likes to stay connected, the Unalace Android Streaming Music Player is the perfect choice for you. Get yours today and experience the ultimate in portable music and audio entertainment!", ],
 		"productRating": [
 			"fa fa-star",
 			"fa fa-star",
@@ -36,7 +38,12 @@ music_systems = {
 		"productName": "SanDisk 8GB Clip Jam MP3 Player",
 		"productHighlights": "High-quality sound / Long battery life / Multiple file format / Clip-on design / FM radio / Voice recording",
 		"productDescriptions": [
-			"Introducing the Unalace Android Streaming Music Player - a sleek and powerful device designed to take your music experience to the next level. With its impressive 32GB storage capacity, you can store thousands of your favorite songs and playlists, allowing you to enjoy your music library anytime, anywhere.",
+			"Introducing the SanDisk 8GB Clip Jam MP3 Player - the perfect device for music lovers on the go! This compact and lightweight player packs a punch, boasting a whopping 8GB of storage space, which is enough to store up to 2000 of your favorite songs.",
+			"The SanDisk 8GB Clip Jam MP3 Player is designed for convenience and ease of use. With its built-in clip, you can attach it to your clothing or bag and take it with you wherever you go. Its small size means that it won't weigh you down, making it perfect for workouts or outdoor activities.",
+			"Despite its small size, the SanDisk 8GB Clip Jam MP3 Player doesn't skimp on features. It has a bright and clear display that makes it easy to navigate through your music library. Plus, its intuitive controls allow you to pause, skip tracks, and adjust volume with ease.",
+			"This MP3 player also comes with a built-in FM radio tuner, so you can tune in to your favorite stations when you want a break from your own music. And with its long battery life, you can enjoy up to 18 hours of playback on a single charge.",
+			"The SanDisk 8GB Clip Jam MP3 Player supports a wide range of audio formats, including MP3, WMA, WAV, and more. And if 8GB isn't enough for you, it also comes with a microSD card slot, allowing you to expand the storage capacity up to 32GB."
+
 		],
 		"productFeatures": [
 			"The SanDisk 8GB Clip Jam MP3 Player has a long battery life, with up to 18 hours of playback time on a single charge.",
@@ -47,7 +54,7 @@ music_systems = {
 			"Clip-on design for easy portability and hands-free use.",
 			"Built-in FM radio for added entertainment."
 		],
-		"additionalInfos": ["Upgrade your music experience with the SanDisk 8GB Clip Jam MP3 Player. With its compact design, high-quality sound, and versatile features, it's the perfect device for music lovers on the go.", ],
+		"additionalInfos": ["In summary, the SanDisk 8GB Clip Jam MP3 Player is a great choice for anyone who wants a compact, portable, and feature-packed music player. So why wait? Get yours today and start enjoying your favorite tunes on the go!", ],
 		"productRating": [
 			"fa fa-star",
 			"fa fa-star",

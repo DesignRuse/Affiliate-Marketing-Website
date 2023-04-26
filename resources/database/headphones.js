@@ -36,8 +36,12 @@ var head_phones = {
 		"productName": "Beats Solo3 Wireless On-Ear Headphones",
 		"productHighlights": "Apple W1 headphone chip / Class 1 Bluetooth / 40 hours of listening time / Fast Fuel technology / Built-in microphone / On-ear controls / Sleek and durable design / Comfortable ear cups",
 		"productDescriptions": [
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat tempus augue, quis feugiat lorem dapibus eu. Vivamus vitae accumsan diam. Quisque dapibus finibus nisi, quis imperdiet nulla hendrerit a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar orci nulla. Integer eu nulla nec massa dictum interdum et mollis ipsum. Cras quis tristique dui. Nunc auctor sodales magna, quis vestibulum lorem condimentum ac. Pellentesque sed feugiat lacus. Cras fermentum nisi vitae libero rhoncus, sit amet tincidunt sapien posuere. In condimentum tempus eros. Morbi accumsan odio nec elit ornare, ac aliquet magna vestibulum. Suspendisse maximus vitae sem sed fringilla.",
-			"Phasellus facilisis leo eu justo consectetur, et vehicula purus fringilla. Etiam dapibus vulputate fringilla. Pellentesque sed metus non elit consectetur molestie. Suspendisse neque enim, pellentesque fringilla congue et, lacinia sit amet nunc. Proin eget posuere lectus, egestas fermentum nulla. Curabitur varius felis quis enim posuere, ut vestibulum leo consectetur. Aenean magna ligula, consequat vel nulla vel, accumsan dapibus nunc. Fusce ut congue eros. Aenean imperdiet tortor nec ex porttitor, quis volutpat mauris fermentum. Cras quis est nunc. In ultrices congue nunc et viverra."
+			"Introducing the JBeats Solo3 Wireless On-Ear Headphones - the ultimate companion for music lovers who want the freedom to listen to their favorite tunes without being tethered to their devices. With exceptional sound quality and advanced features, these headphones are sure to elevate your listening experience to new heights.",
+			"One of the standout features of the JBeats Solo3 Wireless On-Ear Headphones is their impressive battery life. With up to 40 hours of playback time on a single charge, you can enjoy your music all day long without having to worry about recharging. And if you're in a hurry, just five minutes of charging will give you three hours of playback time.",
+			"But let's talk about the sound. The JBeats Solo3 Wireless On-Ear Headphones deliver exceptional audio quality, thanks to their advanced acoustics and powerful drivers. You'll experience crisp, clear highs and deep, rich bass that will make you feel like you're right in the middle of your favorite songs.",
+			"And with the built-in Bluetooth technology, you can easily connect your headphones to your phone, tablet, or other Bluetooth-enabled device. You'll enjoy seamless connectivity and high-quality sound without any cords or cables getting in the way.",
+			"The JBeats Solo3 Wireless On-Ear Headphones also feature an on-ear design that's comfortable and stylish. The adjustable headband and cushioned ear cups provide a comfortable fit, and the sleek design looks great whether you're at the gym, on the go, or just relaxing at home.",
+			"But the JBeats Solo3 Wireless On-Ear Headphones aren't just for listening to music. They also feature an integrated microphone and on-ear controls, so you can take calls, adjust the volume, and control your music with ease."
 		],
 		"productFeatures": [
 			"Lightweight and comfortable design for extended use.",
@@ -49,7 +53,7 @@ var head_phones = {
 			"Compatible with most devices, including smartphones, tablets, laptops, and MP3 players.",
 			"Sleek design looks stylish and modern."
 		],
-		"additionalInfos": ["Whether you're working out, commuting, or just relaxing at home, the Beats Solo3 Wireless On-Ear Headphones provide the perfect soundtrack to your life. Experience the ultimate in wireless audio technology and upgrade your listening experience with Beats Solo3.", ],
+		"additionalInfos": ["Overall, the JBeats Solo3 Wireless On-Ear Headphones are the perfect combination of style, comfort, and exceptional sound quality. Whether you're commuting, working out, or just relaxing at home, these headphones are sure to become your go-to choice for all your listening needs.", ],
 		"productRating": [
 			"fa fa-star",
 			"fa fa-star",

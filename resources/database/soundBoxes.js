@@ -33,8 +33,11 @@ var sound_boxes = {
 		"productName": "JBL FLIP 5, Waterproof Portable Bluetooth Speaker",
 		"productHighlights": "Wireless Bluetooth streaming / 12 hours of playtime / IPX7 waterproof / Compact Size / High-Quality Sound / Stylish Design",
 		"productDescriptions": [
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat tempus augue, quis feugiat lorem dapibus eu. Vivamus vitae accumsan diam. Quisque dapibus finibus nisi, quis imperdiet nulla hendrerit a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar orci nulla. Integer eu nulla nec massa dictum interdum et mollis ipsum. Cras quis tristique dui. Nunc auctor sodales magna, quis vestibulum lorem condimentum ac. Pellentesque sed feugiat lacus. Cras fermentum nisi vitae libero rhoncus, sit amet tincidunt sapien posuere. In condimentum tempus eros. Morbi accumsan odio nec elit ornare, ac aliquet magna vestibulum. Suspendisse maximus vitae sem sed fringilla.",
-			"Phasellus facilisis leo eu justo consectetur, et vehicula purus fringilla. Etiam dapibus vulputate fringilla. Pellentesque sed metus non elit consectetur molestie. Suspendisse neque enim, pellentesque fringilla congue et, lacinia sit amet nunc. Proin eget posuere lectus, egestas fermentum nulla. Curabitur varius felis quis enim posuere, ut vestibulum leo consectetur. Aenean magna ligula, consequat vel nulla vel, accumsan dapibus nunc. Fusce ut congue eros. Aenean imperdiet tortor nec ex porttitor, quis volutpat mauris fermentum. Cras quis est nunc. In ultrices congue nunc et viverra."
+			"Introducing the JBL FLIP 5 - the ultimate portable Bluetooth speaker that's sure to make a splash at your next party or outdoor adventure! With its waterproof design and powerful sound, this speaker is the perfect companion for any occasion.",
+			"First and foremost, the JBL FLIP 5 is designed to withstand the elements. It's completely waterproof, so you can take it to the beach, by the pool, or even in the shower without worrying about damage. Plus, its durable fabric material means it can handle any bumps or bruises that may come its way.",
+			"But let's talk about the sound. With its powerful drivers and bass radiator, the JBL FLIP 5 delivers incredible sound quality that will make you feel like you're at a live concert. And with 12 hours of battery life, you can keep the music going all day (or all night) long.",
+			"One of the best things about the JBL FLIP 5 is its versatility. It connects to your phone or other Bluetooth-enabled device with ease, allowing you to stream your favorite music from Spotify, Apple Music, or any other app. You can also pair multiple JBL FLIP 5 speakers together for an even more immersive sound experience.",
+			"But that's not all - the JBL FLIP 5 also comes with a built-in speakerphone, so you can take calls without ever having to put your phone down. And with its sleek and stylish design, this speaker looks great no matter where you take it."
 		],
 		"productFeatures": [
 			"Wireless Bluetooth streaming allows you to connect your device and stream music wirelessly.",
@@ -44,7 +47,7 @@ var sound_boxes = {
 			"High-quality sound with powerful bass and crystal-clear audio that will elevate your listening experience.",
 			"Stylish design that looks great in any setting, from the beach to the living room."
 		],
-		"additionalInfos": ["The JBL Flip 5 is the perfect combination of style and substance, delivering high-quality sound in a portable and waterproof package. Upgrade your listening experience with this must-have Bluetooth speaker today.", ],
+		"additionalInfos": ["Overall, the JBL FLIP 5 is the perfect combination of style, durability, and amazing sound quality. Whether you're hanging out with friends, enjoying a day at the beach, or just listening to your favorite tunes at home, this speaker is sure to impress."],
 		"productRating": [
 			"fa fa-star",
 			"fa fa-star",
